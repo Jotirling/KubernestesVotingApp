@@ -1,17 +1,27 @@
 # KubernestesVotingApp
-Kuberneter Voting Demo APp
+
+Kuberneter Voting Demo App
 
 Clone the Repo in Kubectl environment and run the below commands:
 
 $ kubectl create -f voting-app-pod.yml
+
 $ kubectl create -f voting-app-service.yml
+
 $ kubectl create -f redis-pod.yml
+
 $ kubectl create -f redis-service.yml
+
 $ kubectl create -f worker-app-pod.yml
+
 $ kubectl create -f postgres-pod.yml
+
 $ kubectl create -f postgres-service.yml
+
 $ kubectl create -f result-app-pod.yml
+
 $ kubectl create -f result-app-service.yml
+
 $ minikube service list
 
 |-------------|----------------|--------------|-----------------------------|
@@ -26,4 +36,7 @@ $ minikube service list
 |-------------|----------------|--------------|-----------------------------|
 
 Check the IP address for the service might be differnet in your case.
-Open your brower and hit the above two ip address to access the http://192.168.59.100:30001 <voting-app> and  http://192.168.59.100:30002 <result-app>
+Open your brower and hit the above two ip address to access 
+http://192.168.59.100:30001 <voting-app>
+http://192.168.59.100:30002 <result-app>
+
