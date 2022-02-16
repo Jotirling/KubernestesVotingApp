@@ -27,16 +27,18 @@ $ minikube service list
 |-------------|----------------|--------------|-----------------------------|
 |  NAMESPACE  |      NAME      | TARGET PORT  |             URL             |
 |-------------|----------------|--------------|-----------------------------|
-| default     | db             | No node port |
-| default     | kubernetes     | No node port |
-| default     | redis          | No node port |
+| default     | db             | No node port |                             |
+| default     | kubernetes     | No node port |                             |
+| default     | redis          | No node port |                             |
 | default     | result-service |           80 | http://192.168.59.100:30002 |
 | default     | voting-service |           80 | http://192.168.59.100:30001 |
-| kube-system | kube-dns       | No node port |
+| kube-system | kube-dns       | No node port |                             |
 |-------------|----------------|--------------|-----------------------------|
 
 Check the IP address for the service might be differnet in your case.
 Open your brower and hit the above two ip address to access 
-http://192.168.59.100:30001 <voting-app>
-http://192.168.59.100:30002 <result-app>
+<voting-app>
+http://192.168.59.100:30001 
+<result-app>
+http://192.168.59.100:30002
 
